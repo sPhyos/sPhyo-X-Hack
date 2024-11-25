@@ -1,0 +1,104 @@
+.contact-container {
+    text-align: center;
+    color: #c9d1d9;
+    background-color: #0d1117;
+    padding: 2rem;
+    border: 2px solid #30363d;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #161b22;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  .contact-terminal {
+    background-color: #161b22;
+    color: #39d353;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1.5rem;
+    border: 2px solid #39d353;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 5px #39d353;
+    animation: flicker 2s infinite;
+    text-align: left;
+    white-space: pre-wrap;
+  }
+  
+  .terminal-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  
+  .terminal-list li::before {
+    content: "➜ ";
+    color: #58a6ff;
+    margin-right: 0.5rem;
+  }
+  
+  .contact-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-links li {
+    margin: 1.2rem 0;
+  }
+  
+  .contact-links a {
+    color: #58a6ff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .contact-links a:hover {
+    color: #1f6feb;
+    text-shadow: 0 0 5px #58a6ff, 0 0 10px #1f6feb;
+  }
+  
+  .hacker-quotes {
+    margin-top: 2rem;
+  }
+  
+  .hacker-quotes h3 {
+    color: #58a6ff;
+    text-shadow: 0 0 10px #58a6ff;
+  }
+  
+  blockquote {
+    margin: 1.5rem auto;
+    background-color: #161b22;
+    border-left: 5px solid #39d353;
+    padding: 1rem;
+    color: #c9d1d9;
+    font-style: italic;
+  }
+  
+  blockquote p {
+    margin: 0;
+  }
+  
+  blockquote footer {
+    text-align: right;
+    margin-top: 1rem;
+    color: #58a6ff;
+    font-size: 0.9rem;
+    text-shadow: 0 0 5px #58a6ff;
+  }
+  
+  @keyframes flicker {
+    0%, 100% {
+      text-shadow: 0 0 5px #39d353, 0 0 10px #3fa851, 0 0 20px #39d353;
+    }
+    50% {
+      text-shadow: 0 0 5px #3fa851, 0 0 15px #39d353, 0 0 30px #3fa851;
+    }
+  }
+  
+  h1, h2 {
+    color: #58a6ff;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px #58a6ff;
+  }
+  

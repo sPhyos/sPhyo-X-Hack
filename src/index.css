@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0d1117; 
+    color: #c9d1d9;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #58a6ff;
+  }
+  
+  a:hover {
+    color: #1f6feb; 
+  }
+  
+  .navbar, .footer {
+    background-color: #161b22; 
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .navbar a {
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer {
+    border-top: 2px solid #30363d; 
+    margin-top: 2rem;
+  }
+  
+  .container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: #58a6ff;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li::before {
+    content: '➜ '; 
+    color: #58a6ff;
+  }
+  
+  .hacker-animation {
+    background-color: #161b22;
+    color: #39d353;
+    font-family: 'Courier New', Courier, monospace; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #39d353;
+    margin: 20px auto;
+    max-width: 800px;
+    height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    border: 2px solid #39d353;
+    animation: flicker 2s infinite;
+  }
+  
+  .hacker-animation pre {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  @keyframes flicker {
+    0%, 100% {
+      text-shadow: 0 0 5px #39d353, 0 0 10px #3fa851, 0 0 20px #39d353;
+    }
+    50% {
+      text-shadow: 0 0 5px #3fa851, 0 0 15px #39d353, 0 0 30px #3fa851;
+    }
+  }
+  
+  .button {
+    background-color: #161b22;
+    color: #58a6ff; 
+    border: 2px solid #58a6ff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #58a6ff; 
+    color: #161b22;
+  }
+  
+  .footer a {
+    color: #58a6ff;
+    margin: 0 0.5rem;
+  }
+  
+  .footer a:hover {
+    color: #1f6feb;
+  }
+  
