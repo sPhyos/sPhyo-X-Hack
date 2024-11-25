@@ -3,20 +3,22 @@ import './HackerAnimation.css';
 
 const HackerAnimation = () => {
   const [displayedText, setDisplayedText] = useState('');
+  const [isGlitching, setIsGlitching] = useState(false);
+
   const codeLines = [
-    "Initializing system... ",
-    " Accessing secure server... ",
-    " Bypassing firewall... ",
-    " Executing exploit payload... ",
-    " Compiling report: Success ",
-    " Warning: Intrusion detected! ",
-    " Session terminated: 192.168.0.101 ",
+    ">> Initializing Virtual Environment... ",
+    ">> Establishing Secure Connection... ",
+    ">> Brute-forcing Encryption Key... ",
+    ">> Injecting Exploit into Memory... ",
+    ">> Accessing Target System... ",
+    ">> Exfiltrating Sensitive Data... ",
+    ">> Operation Complete: Stealth Mode Activated. ",
   ];
 
   useEffect(() => {
     let currentLine = 0;
     let charIndex = 0;
-    const typingSpeed = 100; 
+    const typingSpeed = 80;
 
     const typeEffect = () => {
       if (currentLine < codeLines.length) {
@@ -24,11 +26,12 @@ const HackerAnimation = () => {
           setDisplayedText((prev) => prev + codeLines[currentLine][charIndex]);
           charIndex++;
         } else {
-          setDisplayedText((prev) => prev + '\n'); 
+          setDisplayedText((prev) => prev + '\n');
           charIndex = 0;
           currentLine++;
         }
       } else {
+        setIsGlitching(true);
         clearInterval(typingInterval);
       }
     };
@@ -41,6 +44,7 @@ const HackerAnimation = () => {
   return (
     <div className="hacker-animation">
       <pre>{displayedText}</pre>
+      {isGlitching && <div className="glitch-effect">⚠️ SYSTEM ERROR DETECTED ⚠️</div>}
     </div>
   );
 };

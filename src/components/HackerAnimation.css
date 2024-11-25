@@ -1,31 +1,43 @@
 .hacker-animation {
-    background-color: black;
-    color: green;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    color: #58a6ff;
+    background: #0d1117;
+    padding: 1rem;
+    border: 2px solid #30363d;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px green;
-    margin: 20px auto;
-    max-width: 800px;
-    height: 300px;
+    box-shadow: 0 0 15px #161b22;
+    height: 200px;
     overflow-y: auto;
     white-space: pre-wrap;
-    border: 2px solid lime;
   }
   
-  .hacker-animation pre {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    animation: flicker 2s infinite;
+  .glitch-effect {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #ff4d4d;
+    text-shadow: 0 0 5px #ff4d4d, 0 0 10px #ff4d4d;
+    animation: glitch 1s infinite;
   }
   
-  @keyframes flicker {
-    0%, 100% {
-      text-shadow: 0 0 5px green, 0 0 10px lime, 0 0 20px green;
+  @keyframes glitch {
+    0% {
+      transform: translate(2px, 2px);
     }
-    50% {
-      text-shadow: 0 0 5px lime, 0 0 15px green, 0 0 30px lime;
+    20% {
+      transform: translate(-2px, -2px);
+    }
+    40% {
+      transform: translate(1px, -1px);
+    }
+    60% {
+      transform: translate(-1px, 1px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(-2px, 2px);
     }
   }
   
